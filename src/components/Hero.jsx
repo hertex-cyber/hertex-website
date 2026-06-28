@@ -20,7 +20,7 @@ export default function HeroSection() {
                 {/* Content */}
                 <div className="relative z-10 flex h-full flex-col justify-end px-6 lg:px-12 pb-12 lg:pb-24 w-full mx-auto max-w-7xl">
                     <div className="max-w-3xl">
-                        <h1 className="text-balance text-4xl md:text-7xl xl:text-7xl tracking-tight">Empower Your Business with Hertex</h1>
+                        <h1 className="text-balance text-3xl md:text-7xl xl:text-7xl tracking-tight">Empower Your Business with Hertex</h1>
                         <p className="mt-6 text-balance text-lg text-zinc-300">Innovative strategies and digital solutions designed to scale your enterprise and accelerate growth.</p>
 
                         <div className="mt-8 mb-8 md:mb-0 flex items-center gap-2">
