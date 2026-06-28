@@ -1,35 +1,20 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Button } from './ui/button'
 import { ChevronRight } from 'lucide-react'
-import SideRays from './SideRays'
 
 export default function HeroSection() {
-  const [isDesktop, setIsDesktop] = useState(false)
-
-  useEffect(() => {
-    const checkDesktop = () => setIsDesktop(window.innerWidth >= 1024)
-    checkDesktop()
-    window.addEventListener('resize', checkDesktop)
-    return () => window.removeEventListener('resize', checkDesktop)
-  }, [])
     return (
         <>
             <main className="relative h-screen w-full overflow-hidden bg-zinc-950 text-zinc-50">
-                {/* Background SideRays */}
-                <div className="absolute inset-0 z-0">
-                    <SideRays
-                        speed={2.5}
-                        rayColor1="#9ca3af"
-                        rayColor2="#6b7280"
-                        intensity={isDesktop ? 6 : 2.5}
-                        spread={isDesktop ? 1.2 : 2}
-                        origin="top-right"
-                        tilt={0}
-                        saturation={0.5}
-                        blend={0.5}
-                        falloff={1.3}
-                        opacity={isDesktop ? 1 : 0.7}
-                    />
+                {/* Background Video */}
+                <div className="absolute inset-0 z-0 pointer-events-none">
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="size-full -scale-x-100 object-cover opacity-50 mix-blend-screen"
+                        src="https://videos.pexels.com/video-files/35968183/15249566_1920_1080_30fps.mp4"></video>
                 </div>
 
                 {/* Content */}
