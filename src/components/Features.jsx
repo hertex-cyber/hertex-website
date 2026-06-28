@@ -3,7 +3,6 @@ import { Settings2, Sparkles, Zap } from 'lucide-react'
 // --- Inline Card Components ---
 const Card = ({ className, children }) => (
     <div className={`group relative bg-black shadow-[0_2px_12px_rgba(255,255,255,0.03)] overflow-hidden border border-zinc-800 p-4 py-4 -translate-y-0.5 rounded-xl ${className}`}>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(59,130,246,0.12)_0%,rgba(59,130,246,0.03)_100%)]" />
         <div className="absolute inset-0 opacity-100">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[length:4px_4px]" />
         </div>

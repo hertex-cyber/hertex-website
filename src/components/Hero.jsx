@@ -27,7 +27,7 @@ export default function HeroSection() {
                             <Button
                                 asChild
                                 size="lg"
-                                className="h-12 rounded-none pl-5 pr-3 text-base bg-blue-500/20 text-blue-100 border border-blue-500/30 hover:bg-blue-500/30 hover:border-blue-500/50">
+                                className="h-12 rounded-none pl-5 pr-3 text-base">
                                 <a href="#link" className="flex items-center hover:no-underline">
                                     <span className="text-nowrap">Solutions</span>
                                     <ChevronRight className="ml-1 w-5 h-5" />
