@@ -75,6 +75,8 @@ function BentoGrid({ items = itemsSample }) {
                         }
                     )}
                 >
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(59,130,246,0.12)_0%,rgba(59,130,246,0.03)_100%)]" />
+
                     <div
                         className={`absolute inset-0 ${
                             item.hasPersistentHover
