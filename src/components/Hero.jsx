@@ -29,7 +29,7 @@ export default function HeroSection() {
                                 size="lg"
                                 className="h-12 rounded-none pl-5 pr-3 text-base">
                                 <a href="#link" className="flex items-center hover:no-underline">
-                                    <span className="text-nowrap">Explore Solutions</span>
+                                    <span className="text-nowrap">Solutions</span>
                                     <ChevronRight className="ml-1 w-5 h-5" />
                                 </a>
                             </Button>

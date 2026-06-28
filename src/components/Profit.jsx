@@ -4,27 +4,27 @@ export default function Profit() {
     return (
         <section className="bg-zinc-950 py-16 md:py-24">
             <div className="mx-auto max-w-6xl space-y-8 px-6 md:space-y-16">
-                <h2 className="relative z-10 max-w-xl text-2xl font-medium lg:text-5xl text-zinc-50">Maximize your profit with intelligent automation.</h2>
-                <div className="grid gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24">
+                <h2 className="relative z-10 max-w-xl text-2xl font-medium lg:text-5xl text-zinc-50">Maximize your profit with intelligent agents.</h2>
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24 items-start">
                     <div className="relative space-y-4">
                         <p className="text-zinc-400">
                             Our platform <span className="text-zinc-100 font-bold">drives measurable revenue growth</span> — from streamlining operations to unlocking new income streams across your business.
                         </p>
 
-                        <div className="grid grid-cols-2 gap-3 pt-6 sm:gap-4">
+                        <div className="hidden md:grid grid-cols-2 gap-3 pt-6 sm:gap-4">
                             <div className="space-y-3">
                                 <div className="flex items-center gap-2">
                                     <Zap className="size-4 text-white" />
                                     <h3 className="text-sm font-medium text-zinc-100">Revenue</h3>
                                 </div>
-                                <p className="text-zinc-400 text-sm">Track and grow your top-line revenue with real-time analytics and forecasting.</p>
+                                <p className="text-zinc-400 text-sm">Track and grow your top-line revenue with real-time analytics.</p>
                             </div>
                             <div className="space-y-2">
                                 <div className="flex items-center gap-2">
                                     <Cpu className="size-4 text-white" />
                                     <h3 className="text-sm font-medium text-zinc-100">Profit</h3>
                                 </div>
-                                <p className="text-zinc-400 text-sm">Boost your bottom line by cutting costs and automating profit-critical workflows.</p>
+                                <p className="text-zinc-400 text-sm">Boost your bottom line automating profit-critical workflows.</p>
                             </div>
                         </div>
                     </div>
