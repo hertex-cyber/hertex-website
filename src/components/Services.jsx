@@ -64,7 +64,7 @@ function BentoGrid({ items = itemsSample }) {
                     key={index}
                     className={cn(
                         "group relative p-4 overflow-hidden transition-all duration-300",
-                        "border border-zinc-800 bg-black",
+                        "border border-zinc-800 bg-black rounded-xl",
                         "hover:shadow-[0_2px_12px_rgba(255,255,255,0.03)]",
                         "hover:-translate-y-0.5 will-change-transform",
                         item.colSpan || "col-span-1",
@@ -87,12 +87,12 @@ function BentoGrid({ items = itemsSample }) {
 
                     <div className="relative flex flex-col space-y-3">
                         <div className="flex items-center justify-between">
-                            <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-white/10 group-hover:bg-gradient-to-br transition-all duration-300">
+                            <div className="w-8 h-8 rounded-sm flex items-center justify-center bg-white/10 group-hover:bg-gradient-to-br transition-all duration-300">
                                 {item.icon}
                             </div>
                             <span
                                 className={cn(
-                                    "text-xs font-medium px-2 py-1 rounded-lg backdrop-blur-sm",
+                                    "text-xs font-medium px-2 py-1 rounded-sm backdrop-blur-sm",
                                     "bg-white/10 text-zinc-300",
                                     "transition-colors duration-300 group-hover:bg-white/20"
                                 )}
@@ -118,7 +118,7 @@ function BentoGrid({ items = itemsSample }) {
                                 {item.tags?.map((tag, i) => (
                                     <span
                                         key={i}
-                                        className="px-2 py-1 rounded-md bg-white/10 backdrop-blur-sm transition-all duration-200 hover:bg-white/20"
+                                        className="px-2 py-1 rounded-sm bg-white/10 backdrop-blur-sm transition-all duration-200 hover:bg-white/20"
                                     >
                                         #{tag}
                                     </span>
