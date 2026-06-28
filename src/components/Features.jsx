@@ -20,7 +20,7 @@ const CardHeader = ({ className, children }) => (
 )
 
 const CardContent = ({ className, children }) => (
-    <div className={`${className}`}>
+    <div className={`pb-6 ${className}`}>
         {children}
     </div>
 )
@@ -43,8 +43,8 @@ export default function Features() {
         <section className="bg-zinc-950 py-16 md:py-24">
             <div className="@container mx-auto max-w-6xl px-6">
                 <div className="text-left">
-                    <h2 className="text-balance text-2xl font-semibold lg:text-5xl text-zinc-50">Built to cover your needs</h2>
-                    <p className="mt-4 text-zinc-400">Libero sapiente aliquam quibusdam aspernatur, praesentium iusto repellendus.</p>
+                    <h2 className="text-balance text-2xl font-semibold lg:text-5xl text-zinc-50">Why Choose Hertex</h2>
+                    <p className="mt-4 text-zinc-400">Discover the advantages that set us apart and drive real results for your business.</p>
                 </div>
                 <div className="@min-4xl:max-w-full @min-4xl:grid-cols-3 mx-auto mt-8 grid max-w-sm gap-6 *:text-center md:mt-16">
                     <Card className="group">
@@ -56,11 +56,11 @@ export default function Features() {
                                 />
                             </CardDecorator>
 
-                            <h3 className="mt-6 font-medium text-zinc-100">Customizable</h3>
+                            <h3 className="mt-6 font-medium text-zinc-100">Lightning Fast</h3>
                         </CardHeader>
 
                         <CardContent>
-                            <p className="text-sm text-zinc-400">Extensive customization options, allowing you to tailor every aspect to meet your specific needs.</p>
+                            <p className="text-sm text-zinc-400">Blazing-fast performance that delivers exceptional results in minutes, not days.</p>
                         </CardContent>
                     </Card>
 
@@ -73,11 +73,11 @@ export default function Features() {
                                 />
                             </CardDecorator>
 
-                            <h3 className="mt-6 font-medium text-zinc-100">You have full control</h3>
+                            <h3 className="mt-6 font-medium text-zinc-100">Enterprise Security</h3>
                         </CardHeader>
 
                         <CardContent>
-                            <p className="text-sm text-zinc-400">From design elements to functionality, you have complete control to create a unique and personalized experience.</p>
+                            <p className="text-sm text-zinc-400">Bank-grade encryption and compliance with industry standards to keep your data safe.</p>
                         </CardContent>
                     </Card>
 
@@ -90,11 +90,11 @@ export default function Features() {
                                 />
                             </CardDecorator>
 
-                            <h3 className="mt-6 font-medium text-zinc-100">Powered By AI</h3>
+                            <h3 className="mt-6 font-medium text-zinc-100">Continuous Learning</h3>
                         </CardHeader>
 
                         <CardContent>
-                            <p className="text-sm text-zinc-400">Elements to functionality, you have complete control to create a unique experience.</p>
+                            <p className="text-sm text-zinc-400">Our AI adapts and improves over time, getting better with every interaction and transaction.</p>
                         </CardContent>
                     </Card>
                 </div>
