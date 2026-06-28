@@ -27,7 +27,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={`fixed top-0 w-full z-50 text-zinc-50 transition-all duration-300 border-b ${scrolled ? 'bg-zinc-950/90 backdrop-blur-md border-white/10' : 'bg-transparent border-transparent'}`}>
+      <nav className={`fixed top-0 w-full z-50 text-zinc-50 border-b ${scrolled ? 'bg-zinc-950/90 backdrop-blur-md border-white/10' : 'bg-transparent border-transparent'}`}>
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2">
