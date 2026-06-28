@@ -40,14 +40,14 @@ export default function Profit() {
                                 <svg viewBox="0 0 500 180" className="w-full flex-1" preserveAspectRatio="xMidYMid meet">
                                     <defs>
                                         <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                            <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.6" />
-                                            <stop offset="50%" stopColor="#60a5fa" stopOpacity="0.9" />
-                                            <stop offset="100%" stopColor="#93c5fd" stopOpacity="1" />
+                                            <stop offset="0%" stopColor="#e5e7eb" stopOpacity="0.6" />
+                                            <stop offset="50%" stopColor="#f3f4f6" stopOpacity="0.9" />
+                                            <stop offset="100%" stopColor="#ffffff" stopOpacity="1" />
                                         </linearGradient>
                                         <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
-                                            <stop offset="0%" stopColor="#60a5fa" stopOpacity="0.15" />
-                                            <stop offset="50%" stopColor="#3b82f6" stopOpacity="0.08" />
-                                            <stop offset="100%" stopColor="#3b82f6" stopOpacity="0" />
+                                            <stop offset="0%" stopColor="#f3f4f6" stopOpacity="0.15" />
+                                            <stop offset="50%" stopColor="#e5e7eb" stopOpacity="0.08" />
+                                            <stop offset="100%" stopColor="#e5e7eb" stopOpacity="0" />
                                         </linearGradient>
                                         <filter id="glow">
                                             <feGaussianBlur stdDeviation="3" result="coloredBlur" />
