@@ -1,0 +1,104 @@
+import { Settings2, Sparkles, Zap } from 'lucide-react'
+
+// --- Inline Card Components ---
+const Card = ({ className, children }) => (
+    <div className={`group relative bg-black shadow-[0_2px_12px_rgba(255,255,255,0.03)] overflow-hidden border border-zinc-800 p-4 py-4 -translate-y-0.5 ${className}`}>
+        <div className="absolute inset-0 opacity-100">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[length:4px_4px]" />
+        </div>
+        <div className="relative z-10">
+            {children}
+        </div>
+        <div className="absolute inset-0 -z-10 opacity-100 p-px bg-gradient-to-br from-transparent via-white/10 to-transparent" />
+    </div>
+)
+
+const CardHeader = ({ className, children }) => (
+    <div className={`flex flex-col space-y-1.5 pb-3 ${className}`}>
+        {children}
+    </div>
+)
+
+const CardContent = ({ className, children }) => (
+    <div className={`${className}`}>
+        {children}
+    </div>
+)
+
+const CardDecorator = ({ children }) => (
+    <div className="mask-radial-from-40% mask-radial-to-60% relative mx-auto size-36 duration-200 [--color-border:color-mix(in_oklab,rgba(255,255,255,0.35),transparent)]">
+        <div
+            aria-hidden
+            className="absolute inset-0 bg-[linear-gradient(to_right,var(--color-border)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-border)_1px,transparent_1px)] bg-[size:20px_20px] opacity-100"
+        />
+
+        <div className="absolute inset-0 m-auto flex size-12 items-center justify-center">
+            {children}
+        </div>
+    </div>
+)
+
+export default function Features() {
+    return (
+        <section className="bg-zinc-950 py-16 md:py-24">
+            <div className="@container mx-auto max-w-6xl px-6">
+                <div className="text-left">
+                    <h2 className="text-balance text-2xl font-semibold lg:text-5xl text-zinc-50">Built to cover your needs</h2>
+                    <p className="mt-4 text-zinc-400">Libero sapiente aliquam quibusdam aspernatur, praesentium iusto repellendus.</p>
+                </div>
+                <div className="@min-4xl:max-w-full @min-4xl:grid-cols-3 mx-auto mt-8 grid max-w-sm gap-6 *:text-center md:mt-16">
+                    <Card className="group">
+                        <CardHeader className="pb-3">
+                            <CardDecorator>
+                                <Zap
+                                    className="size-8 text-white"
+                                    aria-hidden
+                                />
+                            </CardDecorator>
+
+                            <h3 className="mt-6 font-medium text-zinc-100">Customizable</h3>
+                        </CardHeader>
+
+                        <CardContent>
+                            <p className="text-sm text-zinc-400">Extensive customization options, allowing you to tailor every aspect to meet your specific needs.</p>
+                        </CardContent>
+                    </Card>
+
+                    <Card className="group">
+                        <CardHeader className="pb-3">
+                            <CardDecorator>
+                                <Settings2
+                                    className="size-8 text-white"
+                                    aria-hidden
+                                />
+                            </CardDecorator>
+
+                            <h3 className="mt-6 font-medium text-zinc-100">You have full control</h3>
+                        </CardHeader>
+
+                        <CardContent>
+                            <p className="text-sm text-zinc-400">From design elements to functionality, you have complete control to create a unique and personalized experience.</p>
+                        </CardContent>
+                    </Card>
+
+                    <Card className="group">
+                        <CardHeader className="pb-3">
+                            <CardDecorator>
+                                <Sparkles
+                                    className="size-8 text-white"
+                                    aria-hidden
+                                />
+                            </CardDecorator>
+
+                            <h3 className="mt-6 font-medium text-zinc-100">Powered By AI</h3>
+                        </CardHeader>
+
+                        <CardContent>
+                            <p className="text-sm text-zinc-400">Elements to functionality, you have complete control to create a unique experience.</p>
+                        </CardContent>
+                    </Card>
+                </div>
+            </div>
+        </section>
+    )
+}
