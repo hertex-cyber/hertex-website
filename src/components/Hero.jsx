@@ -23,7 +23,7 @@ export default function HeroSection() {
                         <h1 className="text-balance text-4xl md:text-7xl xl:text-7xl tracking-tight">Empower Your Business with Hertex</h1>
                         <p className="mt-6 text-balance text-lg text-zinc-300">Innovative strategies and digital solutions designed to scale your enterprise and accelerate growth.</p>
 
-                        <div className="mt-8 flex items-center gap-2">
+                        <div className="mt-8 mb-8 md:mb-0 flex items-center gap-2">
                             <Button
                                 asChild
                                 size="lg"

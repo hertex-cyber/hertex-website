@@ -51,7 +51,7 @@ export const itemsSample = [
         description: "Streamline your workflows with intelligent automation and process optimization",
         icon: <Zap className="w-4 h-4 text-yellow-500" />,
         status: "New",
-        tags: ["Time-Saving", "Efficient", "Smart"],
+        tags: ["Agentic", "Efficient", "Smart"],
         hasPersistentHover: true,
     },
 ];
