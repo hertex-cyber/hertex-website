@@ -84,7 +84,7 @@ export default function Profit() {
                                     <path
                                         d="M0,155 C40,150 70,140 110,125 C150,110 180,120 220,130 C260,140 290,145 330,138 C370,130 400,120 440,115 C460,112 480,118 500,120"
                                         fill="none"
-                                        stroke="rgba(96, 165, 250, 0.3)"
+                                        stroke="rgba(243, 244, 246, 0.3)"
                                         strokeWidth="1.5"
                                         strokeDasharray="3 3"
                                     />
@@ -94,8 +94,8 @@ export default function Profit() {
                                         [0, 140], [110, 55], [200, 40], [300, 110], [410, 75], [500, 68]
                                     ].map(([x, y], i) => (
                                         <g key={i}>
-                                            <circle cx={x} cy={y} r="6" fill="#0f0f0f" stroke="#60a5fa" strokeWidth="2" />
-                                            <circle cx={x} cy={y} r="2.5" fill="#93c5fd" />
+                                            <circle cx={x} cy={y} r="6" fill="#0f0f0f" stroke="#f3f4f6" strokeWidth="2" />
+                                            <circle cx={x} cy={y} r="2.5" fill="#ffffff" />
                                         </g>
                                     ))}
 
@@ -103,13 +103,13 @@ export default function Profit() {
                                     {[
                                         [0, 155], [110, 125], [220, 130], [330, 138], [440, 115], [500, 120]
                                     ].map(([x, y], i) => (
-                                        <circle key={i} cx={x} cy={y} r="3" fill="#0f0f0f" stroke="rgba(96, 165, 250, 0.5)" strokeWidth="1.5" />
+                                        <circle key={i} cx={x} cy={y} r="3" fill="#0f0f0f" stroke="rgba(243, 244, 246, 0.5)" strokeWidth="1.5" />
                                     ))}
 
                                     {/* Enhanced tooltip indicator on peak */}
-                                    <line x1="200" y1="40" x2="200" y2="170" stroke="rgba(96, 165, 250, 0.3)" strokeWidth="1.5" strokeDasharray="4 4" />
-                                    <rect x="155" y="5" width="90" height="28" rx="6" fill="rgba(96, 165, 250, 0.12)" stroke="rgba(96, 165, 250, 0.25)" strokeWidth="1.5" />
-                                    <text x="200" y="24" textAnchor="middle" fill="#60a5fa" fontSize="11" fontFamily="system-ui" fontWeight="600">Peak Revenue</text>
+                                    <line x1="200" y1="40" x2="200" y2="170" stroke="rgba(243, 244, 246, 0.3)" strokeWidth="1.5" strokeDasharray="4 4" />
+                                    <rect x="155" y="5" width="90" height="28" rx="6" fill="rgba(243, 244, 246, 0.12)" stroke="rgba(243, 244, 246, 0.25)" strokeWidth="1.5" />
+                                    <text x="200" y="24" textAnchor="middle" fill="#f3f4f6" fontSize="11" fontFamily="system-ui" fontWeight="600">Peak Revenue</text>
                                 </svg>
                                 {/* Bottom fade overlay */}
                                 <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-zinc-950 to-transparent pointer-events-none rounded-b-[15px]" />
